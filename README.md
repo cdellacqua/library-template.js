@@ -7,7 +7,7 @@ to start a new JS library.
 
 - [TypeScript](https://www.typescriptlang.org/) support;
 - built-in testing ([mocha](https://mochajs.org/) and [chai](https://www.chaijs.com/) for writing tests, [c8](https://github.com/bcoe/c8) for coverage testing);
-- demo web page for development purposes;
+- demo web page and node app for development purposes;
 - [Prettier](https://prettier.io/) and [ESLint](https://eslint.org/) (code style and linting);
 - [Vite.js](https://vitejs.dev/) bundler, configured to output TypeScript declarations and different module formats to guarantee compatibility
   across different targets ([CommonJS](https://en.wikipedia.org/wiki/CommonJS), [ESM](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules) and [UMD](https://github.com/umdjs/umd));
@@ -46,7 +46,8 @@ working on your new awesome library!
 ├── src: folder that contains the source of your library and the demo page
 │   ├── lib: root of your library source files
 │   │   └── index.ts: library entry point
-│   ├── main.ts: script that runs in the demo page
+│   ├── browser.ts: script that runs in the demo page
+│   ├── node.ts: script that runs in the demo node app
 │   ├── style.css: basic style for the demo page
 │   └── vite-env.d.ts: Vite.js type definitions
 ├── tests: folder that contains tests
@@ -68,7 +69,8 @@ This template provides some useful scripts that you can run using the `npm run <
 
 - `coverage`: runs tests and computes code coverage;
 - `test`: tests the application using [mocha](https://www.npmjs.com/package/mocha) and [chai](https://www.npmjs.com/package/chai);
-- `dev`: starts Vite.js in watch mode;
+- `dev:browser`: starts Vite.js in watch mode to let you test the demo page;
+- `dev:node`: starts nodemon in watch mode to let you test the demo node app;
 - `build`: compiles and bundles the library;
 - `doc`: runs typedoc to automatically generate library documentation based on type annotations and JSDoc comments;
 - `prepack`: builds, tests and generates the documentation;
