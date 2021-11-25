@@ -18,7 +18,7 @@ to start a new JS library.
 Running the following commands will clone this template into `my-awesome-library`, install all its dependencies and setup the
 development environment:
 
-```
+```sh
 npx degit cdellacqua/library-template.js my-awesome-library
 cd my-awesome-library
 npm i

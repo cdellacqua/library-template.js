@@ -7,19 +7,12 @@
 	"types": "dist/index.d.ts",
 	"main": "dist/index.cjs.js",
 	"module": "dist/index.es.js",
-	"author": "CHANGEME",
-	"license": "MIT",
-	"keywords": [
-		"CHANGEME"
-	],
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/CHANGEME/CHANGEME"
-	},
-	"bugs": {
-		"url": "https://github.com/CHANGEME/CHANGEME/issues"
-	},
-	"homepage": "https://github.com/CHANGEME/CHANGEME",
+	"author": "",
+	"license": "",
+	"keywords": [],
+	"repository": {},
+	"bugs": {},
+	"homepage": "",
 	"files": [
 		"dist/**/*"
 	],
