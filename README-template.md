@@ -4,7 +4,7 @@
 
 `npm install CHANGEME`
 
-[Documentation](./blob/main/docs/README.md)
+[Documentation](./docs/README.md)
 
 ## Highlights
 
