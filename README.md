@@ -73,8 +73,8 @@ This template provides some useful scripts that you can run using the `npm run <
 - `dev:node`: starts nodemon in watch mode to let you test the demo node app;
 - `build`: compiles and bundles the library;
 - `doc`: runs typedoc to automatically generate library documentation based on type annotations and JSDoc comments;
-- `prepack`: builds, tests and generates the documentation;
-- `lint`: runs eslint;
+- `prepack`: lints, builds, tests and generates the documentation;
+- `lint`: runs eslint (by default eslint will also run prettier via `eslint-plugin-prettier`);
 - `lint:fix`: runs eslint with the --fix flag;
 - `prettier`: runs prettier to verify code-style;
 - `prettier:fix`: runs prettier with the --write flag;
