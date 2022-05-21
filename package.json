@@ -25,7 +25,7 @@
 	},
 	"scripts": {
 		"coverage": "c8 npm run test",
-		"test": "cross-env mocha 'tests/**/*.ts'",
+		"test": "cross-env NODE_ENV=test mocha 'tests/**/*.ts'",
 		"dev:browser": "vite",
 		"dev:node": "nodemon",
 		"build": "vite build && tsc --project ./tsconfig.declarations.json",
