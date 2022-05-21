@@ -32,7 +32,7 @@ const packageLockPath = path.join(currentDir, 'package-lock.json');
 	const description = await question("What's the library description? ");
 	const author = await question("Who's the author? ");
 	const keywords = (await question('What are some keywords you would use to describe this library (space separated)? [] ')).split(' ').filter((s) => s.length > 0);
-	const git = await question("What's the git repository of this library? ");
+	const git = await question("What's the URL of the git repository of this library? ");
 	const defaultHomepage = git.replace(/\.git$/, '');
 	const homepage = (await question(`What's the homepage of this library? [${defaultHomepage}] `)) || defaultHomepage;
 	const defaultIssues = defaultHomepage.length > 0 ? `${defaultHomepage}/issues` : '';
