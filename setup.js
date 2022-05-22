@@ -58,10 +58,10 @@ const packageLockPath = path.join(currentDir, 'package-lock.json');
 	}
 	packageContent.homepage = homepage;
 
-	packageLockContent.name = projectName;
+	packageLockContent.name = packageName;
 	// Starting with lockfileVersion 2 there can be an empty entry
 	if (packageLockContent.packages[''] && packageLockContent.packages[''].name) {
-		packageLockContent.packages[''].name = projectName;
+		packageLockContent.packages[''].name = packageName;
 	}
 
 	await fsPromises.writeFile(packagePath, JSON.stringify(packageContent, undefined, '\t') + '\n');
