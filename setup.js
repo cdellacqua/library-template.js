@@ -68,6 +68,7 @@ const packageLockPath = path.join(currentDir, 'package-lock.json');
 	await fsPromises.writeFile(packageLockPath, JSON.stringify(packageLockContent, undefined, '\t') + '\n');
 
 	console.log("Done. Don't forget to check your package.json!");
+	console.log("If you plan on sharing your code, don't forget to add a LICENSE file to your project.");
 
 	rl.close();
 })();
