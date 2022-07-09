@@ -25,7 +25,7 @@ const packageLockPath = path.join(currentDir, 'package-lock.json');
 
 	const defaultPackageName = projectName;
 	const packageName = (await question(`What's the package name of this project? [${defaultPackageName}] `)) || defaultPackageName;
-	const defaultPackageNameCamelCase = projectName.replace(/(_|-[a-z])/g, (lower) => lower.slice(1).toUpperCase());
+	const defaultPackageNameCamelCase = packageName.replace(/(_|-[a-z])/g, (lower) => lower.slice(1).toUpperCase());
 	const packageNameCamelCase = (await question(`What's the camel case name of this library? [${defaultPackageNameCamelCase}] `)) || defaultPackageNameCamelCase;
 	const defaultLicense = 'MIT';
 	const license = (await question(`What's the library license? [${defaultLicense}] `)) || defaultLicense;
