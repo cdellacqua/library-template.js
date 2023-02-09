@@ -9,6 +9,7 @@ const {devDependencies, peerDependencies, camelCaseName} = JSON.parse(readFileSy
 
 export default defineConfig({
 	build: {
+		sourcemap: true,
 		lib: {
 			formats: ['cjs', 'umd', 'es'],
 			entry: resolve(currentDir, 'src', 'lib', 'index.ts'),
