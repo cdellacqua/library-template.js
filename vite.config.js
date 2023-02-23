@@ -1,18 +1,15 @@
 import {defineConfig} from 'vite';
 import {readFileSync} from 'fs';
-import {resolve, join, dirname} from 'path';
-import {fileURLToPath} from 'url';
+import {join} from 'path';
 
-const currentDir = dirname(fileURLToPath(import.meta.url));
-
-const {devDependencies, peerDependencies, camelCaseName} = JSON.parse(readFileSync(join(currentDir, 'package.json')));
+const {devDependencies, peerDependencies, camelCaseName} = JSON.parse(readFileSync('package.json').toString());
 
 export default defineConfig({
 	build: {
 		sourcemap: true,
 		lib: {
 			formats: ['cjs', 'umd', 'es'],
-			entry: resolve(currentDir, 'src', 'lib', 'index.ts'),
+			entry: join('src', 'lib', 'index.ts'),
 			name: camelCaseName,
 			fileName: 'index',
 		},
