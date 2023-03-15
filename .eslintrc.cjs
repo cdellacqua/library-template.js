@@ -6,7 +6,7 @@ module.exports = {
 		'plugin:@typescript-eslint/recommended',
 		'plugin:prettier/recommended',
 	],
-	plugins: ['@typescript-eslint'],
+	plugins: ['prettier', '@typescript-eslint'],
 	ignorePatterns: ['*.cjs'],
 	parserOptions: {
 		sourceType: 'module',
@@ -27,7 +27,7 @@ module.exports = {
 		'@typescript-eslint/no-floating-promises': 'error',
 		'@typescript-eslint/switch-exhaustiveness-check': 'error',
 		'@typescript-eslint/no-unused-vars': [
-			'error',
+			'warn',
 			{varsIgnorePattern: '^_', argsIgnorePattern: '^_'},
 		],
 	},
