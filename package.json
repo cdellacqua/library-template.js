@@ -6,19 +6,18 @@
 	"type": "module",
 	"types": "dist/index.d.ts",
 	"main": "dist/index.cjs",
-	"module": "dist/index.js",
+	"module": "dist/index.es.js",
 	"author": "",
 	"license": "",
 	"keywords": [],
 	"repository": {},
 	"bugs": {},
 	"homepage": "",
-	"files": [
-		"dist/**/*"
-	],
+	"files": ["dist"],
 	"exports": {
 		".": {
-			"import": "./dist/index.js",
+			"types": "./dist/index.d.ts",
+			"import": "./dist/index.es.js",
 			"require": "./dist/index.cjs"
 		},
 		"./package.json": "./package.json"

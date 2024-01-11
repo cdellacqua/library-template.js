@@ -11,7 +11,7 @@ export default defineConfig({
 			formats: ['cjs', 'umd', 'es'],
 			entry: join('src', 'lib', 'index.ts'),
 			name: camelCaseName,
-			fileName: 'index',
+			fileName: (format) => (format === 'cjs' ? 'index.cjs' : `index.${format}.js`),
 		},
 		rollupOptions: {
 			// make sure to externalize deps that shouldn't be bundled
